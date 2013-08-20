@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sphero For Nvidia Shield</string>
+
+    <!-- Values -->
+    <string name="gyro">Gyro:</string>
+    <string name="imu">IMU:</string>
+    <string name="accelerometer">Accelerometer:</string>
+    <string name="filtered">Filtered:</string>
+    <string name="raw">Raw:</string>
+    <string name="x_label">X:</string>
+    <string name="y_label">Y:</string>
+    <string name="z_label">Z:</string>
+    <string name="speed">Speed:</string>
+    <string name="speed_multiplier">Speed Multiplier:</string>
+    <string name="background_slider">Background Slider Image</string>
+    <string name="slider_thumb">Slider thumb</string>
+    <string name="max_speed_label">Max Speed</string>
+    <string name="stopped_label">Stopped</string>
+
+    <color name="white">#FFFFFF</color>
+    <color name="green">#00FF00</color>
+    <color name="grey">#585858</color>
+    <color name="blue">#149AE3</color>
+
+
+</resources>

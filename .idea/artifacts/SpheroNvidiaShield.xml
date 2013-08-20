@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="apk" build-on-make="true" name="SpheroNvidiaShield">
+    <output-path>$PROJECT_DIR$/out/artifacts/SpheroNvidiaShield</output-path>
+    <properties id="android-properties">
+      <options>
+        <option name="includeSystemProGuardCfgFile" value="true" />
+        <option name="keyStoreUrl" value="file://" />
+        <option name="proGuardCfgFileUrl" value="file://$PROJECT_DIR$/proguard-project.txt" />
+        <option name="signingMode" value="DEBUG" />
+      </options>
+    </properties>
+    <root id="archive" name="SpheroNvidiaShield.apk">
+      <element id="android-final-package" facet="SpheroNvidiaShield/android/Android" />
+    </root>
+  </artifact>
+</component>

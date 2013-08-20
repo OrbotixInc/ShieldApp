@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:background="@drawable/background2">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <!-- IMU -->
+
+        <TextView
+            android:id="@+id/imu_label"
+            style="@style/Label.Title"
+            android:text="@string/imu"/>
+
+        <com.orbotix.SpheroNvidiaShield.ImuView
+            android:id="@+id/imu_values"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imu_label"
+            android:text=""/>
+
+        <!-- Accelerometer -->
+
+        <TextView
+            android:id="@+id/accelerometer_label"
+            style="@style/Label.Title"
+            android:layout_below="@+id/imu_values"
+            android:text="@string/accelerometer"/>
+
+        <!-- Filtered -->
+
+        <com.orbotix.SpheroNvidiaShield.CoordinateView
+            android:id="@+id/accelerometer_filtered_coordinates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/accelerometer_label"
+            android:text="@string/filtered"/>
+
+
+        <!-- Speed -->
+
+        <TextView
+            android:id="@+id/speed_title_text"
+            style="@style/Label.Title"
+            android:layout_below="@+id/accelerometer_filtered_coordinates"
+            android:text="@string/speed"/>
+
+        <com.orbotix.SpheroNvidiaShield.SpeedView
+            android:id="@+id/speed_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/speed_title_text"
+            android:text=""/>
+
+        <orbotix.robot.widgets.HSBColorPickerView
+            android:id="@+id/color_picker"
+            android:layout_height="200dp"
+            android:layout_width="200dp"
+            android:visibility="visible"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/connection_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <orbotix.view.connection.SpheroConnectionView
+            android:id="@+id/sphero_connection_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#F0000000"/>
+
+    </RelativeLayout>
+
+    <orbotix.view.calibration.CalibrationView
+        android:id="@+id/calibration_widget"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+
+</FrameLayout>
